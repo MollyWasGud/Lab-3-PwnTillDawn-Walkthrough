@@ -102,7 +102,16 @@ Login Page: The web application contains a login page at `/login.php`.
 ## :unlock: Stage 3 - Gaining Access
 In this stage, the objective is to bypass or defeat authentication and obtain access to the target application.
 
-### Step 3.1 - Test the Login Form
+### Step 3.1 - Login Page
+Check the login page.
+```bash
+curl http://10.150.150.11/login.php
+```
+![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/curllogin1.png)
+
+![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/curllogin2.png)
+
+### Step 3.2 - Test the Login Form
 A first attempt was made to test whether the login form was vulnerable to SQL injection.
 ```bash
 curl -X POST http://10.150.150.11/login.php --data-urlencode "username=admin' OR 1=1 -- " --data-urlencode "password=anything" -i
@@ -112,7 +121,7 @@ curl -X POST http://10.150.150.11/login.php --data-urlencode "username=admin' OR
 ![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/curlerror2.png)
 > Error received: Char or String "=" is not allowed
 
-### Step 3.2 - Try Default Credentials
+### Step 3.3 - Try Default Credentials
 Since the login panel looked like an admin portal, default credentials were tested.
 ```bash
 curl -X POST http://10.150.150.11/login.php -d "username=admin&password=admin" -i
@@ -122,7 +131,7 @@ curl -X POST http://10.150.150.11/login.php -d "username=admin&password=admin" -
 ![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/curladminadmin2.png)
 HTTP 302 Redirect to `myfiles.php` confirms successful login with `admin:admin`.
 
-### Step 3.3 - Access the File Dashboard
+### Step 3.4 - Access the File Dashboard
 After login, the application redirects to the file management dashboard.
 
 Observation: The dashboard includes an `Add File` feature, which may allow for a file upload exploit.
