@@ -2,14 +2,14 @@
 
 ## Table of Contents
 
-- [Lab Setup](#lab-setup)
-- [Stage 1 - Reconnaissance](#stage-1---reconnaissance)
-- [Stage 2 - Scanning & Enumeration](#stage-2---scanning--enumeration)
-- [Stage 3 - Gaining Access](#stage-3---gaining-access)
-- [Stage 4 - Establishing a Foothold](#stage-4---establishing-a-foothold)
-- [Stage 5 - Capturing the Flag](#stage-5---capturing-the-flag)
-- [Stage 6 - Maintain Access](#stage-6---maintain-access)
-- [Stage 7 - Covering Tracks & Clean Up](#stage-7---covering-tracks--clean-up)
+- [Lab Setup](#desktop_compute-lab-setup)
+- [Stage 1 - Reconnaissance](#mag-stage-1---reconnaissance)
+- [Stage 2 - Scanning & Enumeration](#door-stage-2---scanning--enumeration)
+- [Stage 3 - Gaining Access](#unlock-stage-3---gaining-access)
+- [Stage 4 - Establishing a Foothold](#computer-stage-4---establishing-a-foothold)
+- [Stage 5 - Capturing the Flag](#triangular_flag_on_post-stage-5---capturing-the-flag)
+- [Stage 6 - Maintain Access](#old_key-stage-6---maintain-access)
+- [Stage 7 - Covering Tracks & Clean Up](#broom-stage-7---covering-tracks--clean-up)
 - [Conclusion](#conclusion)
 
 A step-by-step penetration testing walkthrough for the *PwnDrive* machine on the PwnTillDawn.
