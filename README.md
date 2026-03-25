@@ -84,7 +84,8 @@ Use Gobuster to perform directory brute-forcing and discover hidden directories 
 gobuster dir -u http://10.150.150.11 -w /usr/share/wordlists/dirb/common.txt -x php -t 10 --timeout 30s
 ```
 ![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/gobuster1.png)  
-![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/gobuster2.png)
+![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/gobuster2.png)  
+
 Discovered critical endpoints: `/admin/`, `/upload/`, and `/login.php`.
 
 ### Step 2.4 - Review Interesting Pages
