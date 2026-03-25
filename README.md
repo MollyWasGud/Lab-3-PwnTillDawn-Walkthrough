@@ -10,7 +10,7 @@
 - [Stage 5 - Capturing the Flag](#triangular_flag_on_post-stage-5---capturing-the-flag)
 - [Stage 6 - Maintain Access](#old_key-stage-6---maintain-access)
 - [Stage 7 - Covering Tracks & Clean Up](#broom-stage-7---covering-tracks--clean-up)
-- [Conclusion](#conclusion)
+- [Conclusion](#books-conclusion)
 
 A step-by-step penetration testing walkthrough for the *PwnDrive* machine on the PwnTillDawn.
 
