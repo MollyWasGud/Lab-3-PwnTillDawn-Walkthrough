@@ -24,7 +24,8 @@ A step-by-step penetration testing walkthrough for the *PwnDrive* machine on the
 - Tools Used: OpenVPN, nmap, gobuster, curl
 
 [Download from PwnTillDawn](https://online.pwntilldawn.com/)
-![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/openvpn%20PwnTillDawn.png)
+
+![image](https://github.com/MollyWasGud/Lab-3-PwnTillDawn-Walkthrough/blob/main/image%20PwnTillDawn/PwnTillDawn.png)
 
 ---
 ## :mag: Stage 1 - Reconnaissance  
